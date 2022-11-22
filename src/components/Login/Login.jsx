@@ -9,13 +9,13 @@ function Login() {
     const [user, loading] = useAuthState(auth);
     const navigate = useNavigate();
     useEffect(() => {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
       if (loading) {
         // maybe trigger a loading screen
         return;
       }
       if (user) navigate("/dashboard");
-    }, [user, loading]);
+    }, [user, loading, navigate]);
     return (
         <div className="login">
             <div className="login__container">
