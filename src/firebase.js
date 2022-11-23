@@ -11,6 +11,7 @@ import {
     collection,
     addDoc,
 } from "firebase/firestore";
+import { Navigate } from "react-router-dom";
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -56,6 +57,8 @@ const sendPasswordReset = async (email) => {
 };
 const logout = () => {
     signOut(auth);
+    //redirect to login page
+    return <Navigate to="/" />;
 };
 export {
     auth,

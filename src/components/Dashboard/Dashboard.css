@@ -1,0 +1,24 @@
+.hack {
+    background-color: pink;
+    margin-bottom: 2rem ;
+    cursor: pointer;
+    transition:all .2s ease-in-out;
+}
+.hack:hover {
+    background: red;
+    color: white;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hackgroup {
+    display: flex;
+    flex-direction: column;
+}
