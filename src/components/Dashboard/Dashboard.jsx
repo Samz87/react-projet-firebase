@@ -1,4 +1,4 @@
-import { logout } from '../../firebase'
+// import { logout } from '../../firebase'
 import { QRCodeSVG } from 'qrcode.react'
 import './Dashboard.css'
 
