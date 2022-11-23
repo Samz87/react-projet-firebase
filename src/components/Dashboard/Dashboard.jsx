@@ -6,10 +6,10 @@ function Dashboard () {
   return (
     <div className='dashboard'>
       {/* <button onClick={() => logout()}>Sign Out</button> */}
-      <divc className="hackgroup">
+      <div className="hackgroup">
         <button className='hack'>HACK</button>
         <QRCodeSVG value='https://reactjs.org/' />,
-      </divc>
+      </div>
     </div>
   )
 }
